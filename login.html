@@ -1,0 +1,46 @@
+<html>
+<head>
+   <title>login page</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function uservalidation()
+{
+	var user = document.getElementById('uname').value;
+	var passw = document.getElementById('pass').value;
+	if( user=="" )
+	{
+		alert( "Please Enter Username");
+		uname.focus();
+	}
+	else if(passw=="")
+	{
+	  alert( "Please Enter Password");
+	  pass.focus();
+	}
+	
+	
+}
+</script>
+  <body id="login">
+  <img src="Logo.png">
+  <h1>HARI OM LOGISTICS<sup>&trade;</sup></h1>
+<form method="post" action="login.asp">
+<div class="box">
+<h1>WELCOME</h1>
+
+<input type="text" name="phno" placeholder="Username"  class="email" required>
+<span id="umes"></span>
+  
+<input type="password" name="pass" id="pass" placeholder="Password" class="email" required/>
+  
+<div><input type="submit" class="btn" name="btnLogin" Value="Sign In"></div>
+
+<a href="signup.html"><div id="btn2">Sign Up</div></a>
+ </form> 
+</div>
+  
+
+  
+</bODY>
+</html>

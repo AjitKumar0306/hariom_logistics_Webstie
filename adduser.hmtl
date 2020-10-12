@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+<div id="logo">
+<div id="sp1"><a href="" style="margin-left:90%;"><span id="sp0">Logout</span></a></p>
+<div id="sp2"><img src="Logo.png" width="90px" height="90px"><br></div>
+<div id="sp3"><h1>HARIOM LOGISTICS<SUP>&trade;</sup></h1></div>
+</div>
+<div id="nav">
+<div class="navigation">
+  <ul class="mainmenu">
+    <li><a href="">Home</a></li>
+    <li><a href="">User</a>
+	   <ul class="submenu">
+        <li><a href="">Activate User</a></li>
+        <li><a href="">User Details</a></li>
+        <li><a href="">Add New User</a></li>
+      </ul>
+	  </li>
+    <li><a href="">Driver</a>
+      <ul class="submenu">
+        <li><a href="">Add New Driver</a></li>
+        <li><a href="">Driver Details</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cargo.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="Stylesheet" type="text/css" href="cs.css">
+<link rel="Stylesheet" type="text/css" href="effectpic.css">
+</head>
+<body>
+
+
+</head>
+<body>
+<span>
+<div id="soc">
+
+
+<div class="topnav">
+  <div class="topnav-right">
+    <a><i class="fas fa-envelope"></i>HariOmlogistiocs@gmail.com</a>
+    <a><i class="fas fa-phone-square"></i>+91 9874563210</a>
+    <a><i class="fas fa-map-marked-alt"></i>Anderi Mumbai</a>
+  </div>
+</div>
+<div class="bottomnav">
+  <div class="bottomnav-right">
+    <a href="home.html"target="a" class="active">Home</a>
+    <a href="about.html"target="a" >About us</a>
+    <a href="service.html">Services</a>
+    <a href="network.html">Network</a>
+	<a href="whyhol.html">Why HOL?</a>
+	<a href="Login.html">Logout</a>
+  </div>
+</div>
+<div class="logo">
+  <img src="Logo.png">
+  <h1 id="name">HARI OM LOGISTICS Pvt.Ltd.<sup>&trade;</sup></h1>
+</div>
+</div>
+</span>
+<div id="bodycont">
+<form method="post" action="vehi.asp" onsubmit="return validation();">
+<div class="box">
+<center>
+<h1>Book Vehical</h1>
+<hr><br>
+Name:<br>
+<input type="text" name="fname"  class="email" onkeyup="lettersOnly(this)" required><br><br>
+Phone Number:<br>
+<input type="text" id="num"  name="ph" class="email" onkeyup="numbersOnly(this)" required ><br><br>
+Source:<br>
+<input type="text" name="sour"   class="email" required><br><br>
+Destination:<br>
+<input type="text" name="des"   class="email" required><br><br>
+Commodity:<br>
+<input type="text" name="com"   class="email" required><br><br>
+Date:<br>
+<input type="date" name="dat"   class="email" required><br><br>
+Actual Gross Weight :<br>
+<input type="text" name="wh" onkeyup="numbersOnlyk(this)" placeholder="In Kilograms"  class="email" required><br><br>
+<div><input type="submit" class="btn" Value="Book"></div>
+<a href="home.html"><div id="btn2">Cancle</div></a>  
+</center> 
+</div> 
+  
+</form>
+
+<hr>
+
+<br>
+<center>
+<img src="Logo.png" width="50px" height="50px"><br>
+
+	<br>
+	<p1>Sanjaynagar near Hema Industrises, Anderi (East) Mumbai 400093</p1><br>
+	<p3> (91) 958-851-5151 | info@holgroup.com</p3></br>
+	<p2>(022) 234 45151 | (022) 234 50551</p2><br>
+	<br>
+
+	<p4>Copyright 2019 &copy; Hari Om Logistics Transport Co. Pvt. Ltd.</p4>
+
+</center>
+
+<script>
+function lettersOnly(input) {
+    var regex = /[^a-z]/gi;
+    input.value = input.value.replace(regex, "");
+}
+
+function numbersOnly(input) {
+    var regex = /[^0-9]/gi;
+    input.value = input.value.replace(regex, "");
+}
+function numbersOnlyk(input) {
+    var regex = /[^0-9.]/gi;
+    input.value = input.value.replace(regex, "");
+}
+
+function validation()
+{
+	
+	var ph = document.getElementById("num").value;
+
+if(ph.length > 10  || ph.length < 10)
+{
+	alert("Invalid Phone Number");
+	ph.focus(); 
+	return false;
+}	
+}
+</script>
+</body>
+</html>
